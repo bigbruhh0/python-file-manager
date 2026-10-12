@@ -11,6 +11,7 @@
 ## Структура проекта
 
 - `file_manager/main.py` — создание приложения и запуск главного окна.
+- `file_manager/__main__.py` — точка входа для команды `python -m file_manager`; вызывает `main()`.
 - `file_manager/ui/main_window.py` — главное окно и навигация.
 - `file_manager/ui/preview_panel.py` — панель предпросмотра файлов.
 - `file_manager/ui/main_window.ui` — приложенная форма для критерия задания; приложение её не загружает, интерфейс создаётся в Python-коде.
