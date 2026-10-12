@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Я добавил этот файл как сгенерированную форму для критерия тестового задания.
+  Qt Designer я не использовал: интерфейс приложения написал на Python-коде.
+  Приложение не загружает эту форму; она приложена отдельно как артефакт задания.
+-->
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowTitle">
+   <string>Python File Manager</string>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>500</height>
+   </size>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1100</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="mainLayout">
+    <item>
+     <layout class="QHBoxLayout" name="navigationLayout">
+      <item>
+       <widget class="QPushButton" name="backButton">
+        <property name="text"><string>Назад</string></property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="forwardButton">
+        <property name="text"><string>Вперёд</string></property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="upButton">
+        <property name="text"><string>Вверх</string></property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="pathLabel">
+        <property name="text"><string>Путь:</string></property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="pathEdit"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="goButton">
+        <property name="text"><string>Перейти</string></property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="chooseButton">
+        <property name="text"><string>Выбрать папку…</string></property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QSplitter" name="mainSplitter">
+      <property name="orientation"><enum>Qt::Horizontal</enum></property>
+      <widget class="QTreeView" name="directoryTree">
+       <property name="minimumSize">
+        <size><width>250</width><height>0</height></size>
+       </property>
+      </widget>
+      <widget class="QWidget" name="previewContainer">
+       <layout class="QVBoxLayout" name="previewLayout"/>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
